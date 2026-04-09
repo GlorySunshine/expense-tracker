@@ -1,4 +1,4 @@
-# expense-tracker
+﻿# expense-tracker-daily
 
 > OpenClaw 智能记账 Skill — 用自然语言记账，AI 自动分类，多维度统计分析。
 
@@ -22,16 +22,16 @@
 
 ### 安装
 
-将整个 `expense-tracker` 目录复制到 OpenClaw skills 目录：
+将整个 `expense-tracker-daily` 目录复制到 OpenClaw skills 目录：
 
 ```bash
-cp -r expense-tracker ~/.qclaw/skills/expense-tracker
+cp -r expense-tracker-daily ~/.qclaw/skills/expense-tracker-daily
 ```
 
 Windows:
 
 ```powershell
-Copy-Item -Recurse expense-tracker $env:USERPROFILE\.qclaw\skills\expense-tracker
+Copy-Item -Recurse expense-tracker-daily $env:USERPROFILE\.qclaw\skills\expense-tracker-daily
 ```
 
 重启 OpenClaw Gateway 即生效。
@@ -53,7 +53,7 @@ Copy-Item -Recurse expense-tracker $env:USERPROFILE\.qclaw\skills\expense-tracke
 ## 目录结构
 
 ```
-expense-tracker/
+expense-tracker-daily/
 ├── README.md                  ← 你正在看的文件
 ├── SKILL.md                   ← OpenClaw Skill 配置（AI 指令）
 ├── scripts/
@@ -75,7 +75,7 @@ expense-tracker/
 所有记账数据存储在本地：
 
 ```
-~/.qclaw/workspace/expense-tracker-data/
+~/.qclaw/workspace/expense-tracker-daily-data/
 ├── expenses.json    ← 所有支出记录
 └── config.json      ← 用户配置（扩展分类等）
 ```
